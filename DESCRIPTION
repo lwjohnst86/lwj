@@ -1,5 +1,5 @@
 Package: lwj
-Title: What the Package Does (One Line, Title Case)
+Title: My Own Functions.
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Luke",
@@ -7,9 +7,9 @@ Authors@R:
            role = c("aut", "cre"),
            email = "lwjohnst@gmail.com",
            comment = c(ORCID = "0000-0003-4169-2616"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+Description: This contains functions I use in my daily work that don't yet have 
+    their own package.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
