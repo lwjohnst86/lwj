@@ -1,6 +1,14 @@
 
-badge_document_status <- function(state = "in progress") {
-    badge_url <- "https://img.shields.io/badge/document%20status-in%20progress-orange?style=flat-square"
+badge_document_status <- function(state = c("in progress", "completed")) {
+
+    state <- stringr::str_replace(state, " ", "%20")
+    state <- match.arg(state)
+    badge_colour <- switch(
+        state,
+        `in progress` = "orange",
+        completed = "success"
+    )
+    badge_url <- glue::glue("https://img.shields.io/badge/document%20status-{state}-{badge_colour}?style=flat-square")
     badge_name <- "document status"
     badge <- glue::glue("![{badge_name}]({badge_url})")
 
