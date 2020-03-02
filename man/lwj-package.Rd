@@ -4,7 +4,7 @@
 \name{lwj-package}
 \alias{lwj}
 \alias{lwj-package}
-\title{lwj: My Own Functions.}
+\title{lwj: My Own Functions}
 \description{
 This contains functions I use in my daily work that don't yet have 
     their own package.
