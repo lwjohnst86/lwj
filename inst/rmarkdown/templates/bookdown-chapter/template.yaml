@@ -1,0 +1,4 @@
+name: Bookdown Chapter
+description: >
+   Draft a bookdown chapter file.
+create_dir: FALSE
