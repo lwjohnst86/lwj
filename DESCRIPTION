@@ -18,7 +18,9 @@ Imports:
     magrittr,
     qrencoder,
     usethis,
-    glue
+    glue,
+    tibble,
+    stringr
 RoxygenNote: 7.0.2
 URL: https://github.com/lwjohnst86/lwj
 BugReports: https://github.com/lwjohnst86/lwj/issues
