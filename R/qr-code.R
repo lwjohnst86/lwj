@@ -1,10 +1,11 @@
-#' QR Code generator to PNG image.
+#' QR Code generator to SVG file.
 #'
-#' See [qrencoder::qrencode_png()].
+#' @param text The text or URL to use to add to the QR code.
+#' @param path The output path for the SVG file.
 #'
-#' @name qrencode_png
-#' @rdname qrencode_png
-#' @keywords internal
 #' @export
-#' @importFrom qrencoder qrencode_png
-NULL
+qr_to_svg <- function(text, path) {
+    qrcode::qr_code(x = text) |>
+        qrcode::generate_svg(filename = path)
+}
+
